@@ -24,7 +24,7 @@ int main()
 	cin >> midterm >> final;
 
 	//enter hw
-	cout << " Enter hw grades";
+	cout << " Enter hw grades (Ctrl+D when done)" << endl;
 	vector<double> homework;
 	double x;
 
@@ -50,7 +50,7 @@ int main()
 
 	// compute final grade
 	streamsize prec = cout.precision();
-	cout << "Your final gfrade is " << setprecision(3)
+	cout << name << "'s final grade is " << setprecision(3)
 		<< 0.2 * midterm + 0.4 * final + 0.4 * median
 		<< setprecision(prec) << endl;
 	return 0;
