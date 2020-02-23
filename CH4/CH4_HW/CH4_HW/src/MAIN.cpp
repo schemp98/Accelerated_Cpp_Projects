@@ -20,6 +20,17 @@ int main()
 	Student_info record;
 	string::size_type maxlen = 0;
 
+#if 0 // HW 4-2
+
+	for (int i = 0; i <= 1000; ++i) {
+		int sq = i * i;
+		
+		cout << std::setw(4) << i;
+		cout << std::setw(7) << i*i << endl;
+	}
+
+#endif
+
 	// read and store all of the students data
 	while (read(cin, record)) {
 		// fine the length of the longest name
